@@ -32,3 +32,12 @@ body{
 #toppings{
   padding: 1%;
 }
+#top{
+  padding: 10%;
+  text-align: center;
+  color:whitesmoke;
+  font-family: 'Alfa Slab One', cursive;  
+}
+#top h1{
+  font-size: 60px;
+}
