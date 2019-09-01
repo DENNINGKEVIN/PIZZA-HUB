@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles1.css">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <title>order</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <a class="navbar-brand" href="index.html">Denny's Pizza</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="order.html">Order</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutUs.html">About us</a>
+        </li>
+        <!-- <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li> -->
+      </ul>
+    </div>
+  </nav>
+  <div id="top">
+    <div class="container">
+      <div class="jumbotron" id="top1">
+        <img src="images/logo/icon3.jpeg" alt="" width="150px">
+        <h1>PLACE YOUR ORDER HERE</h1>
+      </div>
+    </div>
+  </div>
+  <div id="order">
+    <div class="container">
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-md-4">
+            <button type="button" class="order" class="btn btn-primary btn-lg" data-toggle="modal"
+              data-target="#modal1">
+              SMALL
+            </button>
+
+            <!-- The Modal -->
+            <div class="modal" id="modal1">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Order Small pizza with:</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body" id="input">
+                    <header><u>CRUSTS</u></header>
+                    <label class="container" id="input1">Cheesy
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container" id="input2">Classic
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container" id="input3">Deep-pan
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container" id="input4">Puff
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <header><u>TOPPINGS</u></header>
+                    <label class="container" id="input5">Barbecue Chicken
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container" id="input6">Chicken Fajita
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container" id="input7">Taco
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container" id="input8">Ham and Pineapple
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+
+
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <button type="button" class="order" class="btn btn-primary btn-lg" data-toggle="modal"
+              data-target="#modal2">
+              MEDIUM
+            </button>
+
+            <!-- The Modal -->
+            <div class="modal" id="modal2">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Order Medium pizza with:</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <header> <u>CRUSTS</u></header>
+                    <label class="container" id="input9">Cheesy
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container" id="input10">Classic
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container" id="input11">Deep-pan
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container" id="input12">Puff
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <header><u>TOPPINGS</u></header>
+                    <label class="container" id="input13">Barbecue Chicken
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container" id="input14">Chicken Fajita
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container" id="input15">Taco
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container" id="input16">Ham and Pineapple
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+
+
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <button type="button" class="order" class="btn btn-primary btn-lg" data-toggle="modal"
+              data-target="#modal3">
+              LARGE
+            </button>
+
+            <!-- The Modal -->
+            <div class="modal" id="modal3">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Order Large pizza with:</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <header><u>CRUSTS</U></header>
+                    <label class="container" id="input17">Cheesy
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container" id="input18">Classic
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container" id="input19">Deep-pan
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container" id="input20">Puff
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <header><u>TOPPINGS</u></header>
+                    <label class="container" id="input21">Barbecue Chicken
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container" id="input22">Chicken Fajita
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container" id="input23">Taco
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container" id="input24">Ham and Pineapple
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+
+
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
