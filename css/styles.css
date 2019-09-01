@@ -5,3 +5,16 @@ nav{
 body{
   font-family: 'Pacifico', cursive;
 }
+#body{  
+  background-image: url(../images/slides/n.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 6%;  
+}
+#top{
+  padding: 10%;
+  text-align: center;
+  color:whitesmoke;
+  font-family: 'Alfa Slab One', cursive;  
+}
