@@ -24,3 +24,11 @@ body{
 #menu p{
   color: aliceblue;  
 }
+#menu h1{
+  text-align: center;
+  font-family: 'Alfa Slab One', cursive;
+  padding: 1%;
+}
+#toppings{
+  padding: 1%;
+}
