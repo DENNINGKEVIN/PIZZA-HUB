@@ -1,5 +1,6 @@
 body{
   font-family: 'Pacifico', cursive; 
+
   
 }
 #body{  
@@ -67,4 +68,9 @@ background-color: dimgray;
 }
 #top img {
   border-radius: 50%;
+}
+#icon{
+  padding: 2%;
+  text-align: center;
+  background-color: dimgray;
 }
