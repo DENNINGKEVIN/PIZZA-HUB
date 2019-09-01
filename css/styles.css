@@ -21,3 +21,6 @@ body{
 #menu{
   background-color: dimgray;
 }
+#menu p{
+  color: aliceblue;  
+}
