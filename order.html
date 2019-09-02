@@ -11,7 +11,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <title>order</title>
+  <title>DENNY'S PIZZA</title>
 </head>
 
 <body>
@@ -47,225 +47,123 @@
       </div>
     </div>
   </div>
-  <div id="order">
-    <div class="container">
-      <div class="jumbotron">
+
+  <body>
+    <div class="container-fluid">      
+
+      <div class="well pizzaMaker">
+        <h4 class="text-center">-Craft the pizza of your dreams-</h4>
+        <p class="text-center">All pizzas come with our special 3 cheese blend</p>
+        <form id="pizzaForm">
+          <p class="qHeader">Select Pizza Size:</p>
+          <select class="form-control" id="size">
+            <option value="Personal">Personal $8</option>
+            <option value="Medium">Medium $10</option>
+            <option value="Large">Large $12</option>
+            <option value="Extra Large">Extra Large $15</option>
+          </select>
+          <br>
+          <p class="qHeader">Select Pizza Style:</p>
+          <select class="form-control" id="style">
+            <option>Deep Dish</option>
+            <option>Regular</option>
+            <option>Thin Crust</option>
+          </select>
+          <br>
+          <div class="form-group">
+            <p class="qHeader">Toppings: ($1 per topping)</p>
+            <input type="checkbox" name="topping" value="Pepperoni"> Pepperoni<br>
+            <input type="checkbox" name="topping" value="Sausage"> Sausage<br>
+            <input type="checkbox" name="topping" value="Ham"> Ham<br>
+            <input type="checkbox" name="topping" value="Olive"> Black Olives<br>
+            <input type="checkbox" name="topping" value="Bell"> Bell Pepper<br>
+            <input type="checkbox" name="topping" value="Pineapple"> Pineapple<br>
+            <input type="checkbox" name="topping" value="Basil"> Fresh Basil<br>
+            <input type="checkbox" name="topping" value="Mozarella"> Mozarella Balls<br>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-danger" id="submitPizza">Place in Cart</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="well cartWell">
+        <div class="text-center">
+          <h3>Your Cart</h3>
+          <h4>Your Total: $<span class="cartTotal"></span></h4>
+        </div>
         <div class="row">
-          <div class="col-md-4">
-            <button type="button" class="order" class="btn btn-primary btn-lg" data-toggle="modal"
-              data-target="#modal1">
-              SMALL
-            </button>
-
-            <!-- The Modal -->
-            <div class="modal" id="modal1">
-              <div class="modal-dialog">
-                <div class="modal-content">
-
-                  <!-- Modal Header -->
-                  <div class="modal-header">
-                    <h4 class="modal-title">Order Small pizza with:</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  </div>
-
-                  <!-- Modal body -->
-                  <div class="modal-body" id="1input">
-                    <header><u>CRUSTS</u></header>
-                    <label class="container" id="input1">Cheesy
-                      <input type="checkbox">
-                      <span class="checkmark"></span>
-                    </label>
-
-                    <label class="container" id="input2">Classic
-                      <input type="checkbox">
-                      <span class="checkmark"></span>
-                    </label>
-
-                    <label class="container" id="input3">Deep-pan
-                      <input type="checkbox">
-                      <span class="checkmark"></span>
-                    </label>
-
-                    <label class="container" id="input4">Puff
-                      <input type="checkbox">
-                      <span class="checkmark"></span>
-                    </label>
-                    <header><u>TOPPINGS</u></header>
-                    <label class="container" id="input5">Barbecue Chicken
-                      <input type="checkbox">
-                      <span class="checkmark"></span>
-                    </label>
-
-                    <label class="container" id="input6">Chicken Fajita
-                      <input type="checkbox">
-                      <span class="checkmark"></span>
-                    </label>
-
-                    <label class="container" id="input7">Taco
-                      <input type="checkbox">
-                      <span class="checkmark"></span>
-                    </label>
-
-                    <label class="container" id="input8">Ham and Pineapple
-                      <input type="checkbox">
-                      <span class="checkmark"></span>
-                    </label>
-
-
-                  </div>
-
-                  <!-- Modal footer -->                  
-                  <div class="modal-footer">
-                    <textarea name="" id="" cols="8" rows="1"></textarea>
-                    <button type="button" class="btn btn-danger" >Order</button>
-                  </div>
-
-                </div>
-              </div>
-            </div>
+          <div class="col-xs-1">
           </div>
-          <div class="col-md-4">
-            <button type="button" class="order" class="btn btn-primary btn-lg" data-toggle="modal"
-              data-target="#modal2">
-              MEDIUM
-            </button>
-
-            <!-- The Modal -->
-            <div class="modal" id="modal2">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <!-- Modal Header -->
-                  <div class="modal-header">
-                    <h4 class="modal-title">Order Medium pizza with:</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  </div>
-                  <!-- Modal body -->
-                  <div class="modal-body" id="2input">
-                    <header> <u>CRUSTS</u></header>
-                    <label class="container" id="input9">Cheesy
-                      <input type="checkbox">
-                      <span class="checkmark"></span>
-                    </label>
-
-                    <label class="container" id="input10">Classic
-                      <input type="checkbox">
-                      <span class="checkmark"></span>
-                    </label>
-
-                    <label class="container" id="input11">Deep-pan
-                      <input type="checkbox">
-                      <span class="checkmark"></span>
-                    </label>
-
-                    <label class="container" id="input12">Puff
-                      <input type="checkbox">
-                      <span class="checkmark"></span>
-                    </label>
-                    <header><u>TOPPINGS</u></header>
-                    <label class="container" id="input13">Barbecue Chicken
-                      <input type="checkbox">
-                      <span class="checkmark"></span>
-                    </label>
-
-                    <label class="container" id="input14">Chicken Fajita
-                      <input type="checkbox">
-                      <span class="checkmark"></span>
-                    </label>
-
-                    <label class="container" id="input15">Taco
-                      <input type="checkbox">
-                      <span class="checkmark"></span>
-                    </label>
-
-                    <label class="container" id="input16">Ham and Pineapple
-                      <input type="checkbox">
-                      <span class="checkmark"></span>
-                    </label>
-                  </div>
-                  <!-- Modal footer -->
-                  <div class="modal-footer">
-                    <textarea name="" id="" cols="8" rows="1"></textarea>
-                    <button type="button" class="btn btn-danger">Order</button>
-                  </div>
-
-                </div>
-              </div>
-            </div>
+          <div class="col-xs-5">
+            <ol id="cart">
+            </ol>
           </div>
-          <div class="col-md-4">
-            <button type="button" class="order" class="btn btn-primary btn-lg" data-toggle="modal"
-              data-target="#modal3">
-              LARGE
-            </button>
-            <!-- The Modal -->
-            <div class="modal" id="modal3">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <!-- Modal Header -->
-                  <div class="modal-header">
-                    <h4 class="modal-title">Order Large pizza with:</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  </div>
-                  <!-- Modal body -->
-                  <div class="modal-body" id="3input">
-                    <header><u>CRUSTS</U></header>
-                    <label class="container" id="input17">Cheesy
-                      <input type="checkbox">
-                      <span class="checkmark"></span>
-                    </label>
-
-                    <label class="container" id="input18">Classic
-                      <input type="checkbox">
-                      <span class="checkmark"></span>
-                    </label>
-
-                    <label class="container" id="input19">Deep-pan
-                      <input type="checkbox">
-                      <span class="checkmark"></span>
-                    </label>
-
-                    <label class="container" id="input20">Puff
-                      <input type="checkbox">
-                      <span class="checkmark"></span>
-                    </label>
-                    <header><u>TOPPINGS</u></header>
-                    <label class="container" id="input21">Barbecue Chicken
-                      <input type="checkbox">
-                      <span class="checkmark"></span>
-                    </label>
-
-                    <label class="container" id="input22">Chicken Fajita
-                      <input type="checkbox">
-                      <span class="checkmark"></span>
-                    </label>
-
-                    <label class="container" id="input23">Taco
-                      <input type="checkbox">
-                      <span class="checkmark"></span>
-                    </label>
-
-                    <label class="container" id="input24">Ham and Pineapple
-                      <input type="checkbox">
-                      <span class="checkmark"></span>
-                    </label>
-                  </div>
-
-                  <!-- Modal footer -->
-
-                  <div class="modal-footer">
-                    <textarea name="" id="" cols="8" rows="1"></textarea>
-                    <button type="button" class="btn btn-danger" >Order</button>
-                  </div>
-
-                </div>
-              </div>
-            </div>
+          <div class="col-xs-5" id="show-pizza">
+            <p id="pizzaListName"></p>
+            <ul>
+              <li>Size: <span class="size"></span></li>
+              <li>Style: <span class="style"></span></li>
+              <li>Toppings: <span class="toppings"></span></li>
+              <li>Cost: $<span class="cost"></span></li>
+            </ul>
+          </div>
+          <div class="col-xs-1">
           </div>
         </div>
+        <div class="text-center">
+          <button type="button" class="btn btn-danger" id="submitCart">Submit Order</button>
+        </div>
       </div>
+
+      <div class="well choiceWell text-center">
+        <p>Will you be picking up your order, or getting it delivered?</p>
+        <p>Pick Up cost $0</p>
+        <button type="button" class="btn btn-success" id="pickup">Pick Up</button>
+        <p id="deliveryCost">Delivery cost $7</p>
+        <button type="button" class="btn btn-danger" id="delivery">Delivery</button>
+      </div>
+
+      <div class="well pickupWell text-center">
+        <form id="pickupForm">
+          <div class="form-group">
+            <label for="name">Enter the name of the person picking up your order:</label>
+            <input id="pickupName" class="form-control" type="text">
+          </div>
+          <button type="button" class="btn btn-success" id="submitPickupForm">Submit</button>
+        </form>
+        <div id="pickupEnd">
+          <p>Thanks for ordering from Stef's Chicago Pizzaria. <span class="nameInput"></span> can pick up your order in
+            15 to 20 minutes!</p>
+          <p>Our Location: 123 Easy Street, Portland OR</p>
+          <button type="button" class="btn btn-success reset">Order More Pizza!</button>
+        </div>
+      </div>
+
+      <div class="well deliveryWell text-center">
+        <form id="deliveryForm">
+          <div class="form-group">
+            <label for="name">Enter Name:</label>
+            <input id="deliveryName" class="form-control" type="text">
+            <label for="address">Enter Address:</label>
+            <input id="address" class="form-control" type="text">
+            <label for="city">Enter City:</label>
+            <input id="city" class="form-control" type="text">
+            <label for="state">Enter State:</label>
+            <input id="state" class="form-control" type="text">
+          </div>
+          <button type="button" class="btn btn-danger" id="submitDeliveryForm">Submit</button>
+        </form>
+        <div id="deliveryEnd">
+          <p>Okay! We are sending this order to <span class="nameInput"></span> at <span class="addressInput"></span>.
+          </p>
+          <p>You can expect your order to arrive in 30 minutes.</p>
+          <button type="button" class="btn btn-danger reset">Order More Pizza!</button>
+        </div>
+      </div>
+
     </div>
-  </div>
-  </div>
+  </body>
 </body>
 
 </html>
